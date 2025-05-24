@@ -15,20 +15,32 @@ public class JwtAuthentication implements Authentication {
     private boolean authenticated;
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() { return null; }
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return null;
+    }
 
     @Override
-    public Object getCredentials() { return null; }
+    public Object getCredentials() {
+        return null;
+    }
 
     @Override
-    public Object getDetails() { return null; }
+    public Object getDetails() {
+        return null;
+    }
 
     @Override
-    public Object getPrincipal() { return null; }
+    public Object getPrincipal() {
+        return null;
+    }
 
     @Override
-    public boolean isAuthenticated() { return authenticated; }
+    public boolean isAuthenticated() {
+        return authenticated;
+    }
 
     @Override
-    public String getName() { return userId; }
+    public String getName() {
+        return userId;
+    }
 }

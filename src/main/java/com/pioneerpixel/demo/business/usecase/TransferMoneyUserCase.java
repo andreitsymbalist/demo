@@ -4,7 +4,6 @@ import com.pioneerpixel.demo.business.api.repository.AccountRepository;
 import com.pioneerpixel.demo.business.api.security.AuthenticationManager;
 import com.pioneerpixel.demo.domain.Account;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.orm.ObjectOptimisticLockingFailureException;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Component;

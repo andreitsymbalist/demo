@@ -1,4 +1,4 @@
 databaseChangeLog:
-- includeAll:
-    path: "migration"
-    relativeToChangelogFile: true
+  - includeAll:
+      path: "migration"
+      relativeToChangelogFile: true

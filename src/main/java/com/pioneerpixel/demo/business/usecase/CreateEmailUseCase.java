@@ -16,7 +16,6 @@ public class CreateEmailUseCase {
     public void execute(String email) {
         boolean isExist = emailRepository.exists(email);
         if (isExist) {
-            // todo: custom exception
             throw new IllegalArgumentException("Email is already in use");
         }
 

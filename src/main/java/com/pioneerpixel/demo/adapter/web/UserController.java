@@ -9,7 +9,6 @@ import com.pioneerpixel.demo.business.dto.UserFilteringAndPagingParams;
 import com.pioneerpixel.demo.business.usecase.GetUsersUseCase;
 import com.pioneerpixel.demo.business.usecase.LoginUseCase;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

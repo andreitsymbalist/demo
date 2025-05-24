@@ -7,8 +7,6 @@ import com.pioneerpixel.demo.domain.PhoneData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.regex.Pattern;
-
 @RequiredArgsConstructor
 @Component
 public class CreatePhoneUseCase {

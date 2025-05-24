@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 @Component
 public class UpdateEmailUseCase {
-    
+
     private final EmailRepository emailRepository;
     private final AuthenticationManager authenticationManager;
 
