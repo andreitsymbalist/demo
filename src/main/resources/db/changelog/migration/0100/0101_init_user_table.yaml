@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0101-init-user-table
+      author: Andrei Tsymbalist
+      changes:
+        - createTable:
+            tableName: user
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_user
+              - column:
+                  name: name
+                  type: VARCHAR(500)
+              - column:
+                  name: date_of_birth
+                  type: date
+              - column:
+                  name: password
+                  type: VARCHAR(500)

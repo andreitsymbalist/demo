@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0103-init-email-data-table
+      author: Andrei Tsymbalist
+      changes:
+        - createTable:
+            tableName: email_data
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_email_data
+              - column:
+                  name: user_id
+                  type: bigint
+              - column:
+                  name: email
+                  type: varchar(200)
+                  constraints:
+                    unique: true
+
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: email_data
+            referencedColumnNames: id
+            referencedTableName: user
+            constraintName: fk_email_data_user

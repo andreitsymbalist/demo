@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0102-init-account-table
+      author: Andrei Tsymbalist
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_account
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    unique: true
+              - column:
+                  name: balance
+                  type: decimal
+              - column:
+                  name: initial_balance
+                  type: decimal
+              - column:
+                  name: version
+                  type: int
+                  defaultValue: '0'
+
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: account
+            referencedColumnNames: id
+            referencedTableName: user
+            constraintName: fk_account_user

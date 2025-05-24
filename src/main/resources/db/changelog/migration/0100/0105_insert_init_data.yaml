@@ -1,0 +1,90 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0105-insert-init-data
+      author: Andrei Tsymbalist
+      changes:
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: name
+                  value: 'Andrei'
+              - column:
+                  name: date_of_birth
+                  value: 01.01.2001
+              - column:
+                  name: password
+                  value: 'security-key'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: balance
+                  value: '100'
+              - column:
+                  name: initial_balance
+                  value: '100'
+              - column:
+                  name: user_id
+                  value: '1'
+        - insert:
+            tableName: phone_data
+            columns:
+              - column:
+                  name: phone
+                  value: '79207865432'
+              - column:
+                  name: user_id
+                  value: '1'
+        - insert:
+            tableName: email_data
+            columns:
+              - column:
+                  name: email
+                  value: 'andrei.tsymbalist@gmail.com'
+              - column:
+                  name: user_id
+                  value: '1'
+
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: name
+                  value: 'Vadim'
+              - column:
+                  name: date_of_birth
+                  value: 01.05.1993
+              - column:
+                  name: password
+                  value: 'coffee-key'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: balance
+                  value: '150'
+              - column:
+                  name: initial_balance
+                  value: '150'
+              - column:
+                  name: user_id
+                  value: '2'
+        - insert:
+            tableName: phone_data
+            columns:
+              - column:
+                  name: phone
+                  value: '79207861111'
+              - column:
+                  name: user_id
+                  value: '2'
+        - insert:
+            tableName: email_data
+            columns:
+              - column:
+                  name: email
+                  value: 'vadim.barbados@gmail.com'
+              - column:
+                  name: user_id
+                  value: '2'

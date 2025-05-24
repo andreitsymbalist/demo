@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0100-init-schema
+      author: Andrei Tsymbalist
